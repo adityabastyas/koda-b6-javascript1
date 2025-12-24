@@ -8,7 +8,7 @@
 flowchart TD
 
   A@{shape: circle, label: "start"}
-  B@{shape: lean-r, label: "input : r , phi"}
+  B@{shape: lean-r, label: "input : r"}
   C@{shape: rect, label: "luasLingkaran =  phi * r * r"}
   D@{shape: lean-r, label: 'Output: "luas lingkaran adalah " + luasLingkaran'}
   E@{shape: rect, label: "kelilingLingkaran = 2 * phi * r"}
@@ -22,3 +22,4 @@ flowchart TD
   E --> F
   F --> G
 ```
+
