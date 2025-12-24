@@ -8,7 +8,7 @@
 flowchart TD
 
   A@{shape: circle, label: "start"}
-  B@{shape: lean-r, label: "input : r, phi"}
+  B@{shape: lean-r, label: "input : r"}
   C@{shape: diamond, label: "r % 7 === 0"}
   D@{shape: rect, label: "phi =22 / 7"}
   E@{shape: rect, label: "phi =3.14"}
@@ -31,3 +31,4 @@ flowchart TD
   I --> J
 
 ```
+
