@@ -8,19 +8,26 @@
 flowchart TD
 
   A@{shape: circle, label: "start"}
-  B@{shape: lean-r, label: "input : r"}
-  C@{shape: rect, label: "phi = 3.14"}
-  D@{shape: rect, label: "luasLingkaran =  phi * r * r"}
-  E@{shape: lean-r, label: 'Output: "luas lingkaran adalah " + luasLingkaran'}
-  F@{shape: rect, label: "kelilingLingkaran = 2 * phi * r"}
-  G@{shape: lean-r, label: 'Output: "keliling lingkaran adalah " + kelilingLingkaran'}
- H@{shape: dbl-circ, label: "selesai"}
+  B@{shape: lean-r, label: "input : r, phi"}
+  C@{shape: diamond, label: "r % 7 === 0"}
+  D@{shape: rect, label: "phi =22 / 7"}
+  E@{shape: rect, label: "phi =3.14"}
+  F@{shape: rect, label: "luasLingkaran = phi * r * r"}
+  G@{shape: rect, label: "kelilingLingkaran = 2 * phi * r"}
+  H@{shape: lean-r, label: "Output : luasLingkaran"}
+  I@{shape: lean-r, label: "Output : kelilingLingkaran"}
+
+ J@{shape: dbl-circ, label: "selesai"}
 
   A --> B
   B --> C
-  C --> D
-  D --> E
+  C --True--> D
+  C --False--> E
+  D --> F
   E --> F
   F --> G
   G --> H
+  H --> I
+  I --> J
+
 ```
