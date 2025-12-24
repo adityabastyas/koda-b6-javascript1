@@ -45,7 +45,7 @@ console.log(my[0].favorite[3].fruit.is);
 
 //Memunculkan number 32 ketika kalkulasi num.first[1] + num.second[2]
 const num = {
-  first: [2, 3],
-  second: [5, 7, "2"],
+  first: [2, 30],
+  second: [5, 7, 2],
 };
 console.log(num.first[1] + num.second[2]);
