@@ -1,10 +1,10 @@
 // hitung luas dan keliling lingkaran
 
-const r = 15;
-const phi = 3.14;
+let r = 15;
+let phi = 3.14;
 
-const luasLingkaran = `luas lingkaran adalah ${phi * r * r}`;
-console.log(luasLingkaran);
+const luasLingkaran = phi * r * r;
+console.log("luas lingkaran adalah " + luasLingkaran);
 
-const kelilingLingkaran = `keliling lingkaran adalah ${2 * phi * r}`;
-console.log(kelilingLingkaran);
+const kelilingLingkaran = 2 * phi * r;
+console.log("keliling lingkaran adalah " + kelilingLingkaran);
