@@ -12,11 +12,11 @@ flowchart TD
   F@{shape: lean-r, label : 'Output : "Hello" + fullName'}
   G@{shape: diamond, label: 'fullName === "Dan" || fullName === "John"'}
 
-  H@{shape: lean-r, label: "Output : #quot;Whats'up + fullName#quot;"}
+  H@{shape: lean-r, label: "Output : #quot;Whats'up#quot; + fullName"}
 
   I@{shape: diamond, label: 'age > 18'}
   J@{shape: lean-r, label: 'Output : "How are you today?"'}
-  K@{shape: lean-r, label: "Output : #quot; Let's go to school!#quot;"}
+  K@{shape: lean-r, label: "Output : #quot;Let's go to school!#quot;"}
   L@{shape: diamond, label: 'hobbies[0] === "Programming"'}
   M@{shape: lean-r, label: 'Output : "I love JavaScript!"'}
   N@{shape: diamond, label: 'fullName === "John"'}
