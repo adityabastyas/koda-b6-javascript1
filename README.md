@@ -9,11 +9,12 @@ flowchart TD
 
   A@{shape: circle, label: "start"}
   B@{shape: lean-r, label: "input : r"}
-  C@{shape: rect, label: "luasLingkaran =  phi * r * r"}
-  D@{shape: lean-r, label: 'Output: "luas lingkaran adalah " + luasLingkaran'}
-  E@{shape: rect, label: "kelilingLingkaran = 2 * phi * r"}
-  F@{shape: lean-r, label: 'Output: "keliling lingkaran adalah " + kelilingLingkaran'}
-  G@{shape: dbl-circ, label: "selesai"}
+  C@{shape: rect, label: "phi = 3.14"}
+  D@{shape: rect, label: "luasLingkaran =  phi * r * r"}
+  E@{shape: lean-r, label: 'Output: "luas lingkaran adalah " + luasLingkaran'}
+  F@{shape: rect, label: "kelilingLingkaran = 2 * phi * r"}
+  G@{shape: lean-r, label: 'Output: "keliling lingkaran adalah " + kelilingLingkaran'}
+ H@{shape: dbl-circ, label: "selesai"}
 
   A --> B
   B --> C
@@ -21,5 +22,5 @@ flowchart TD
   D --> E
   E --> F
   F --> G
+  G --> H
 ```
-
