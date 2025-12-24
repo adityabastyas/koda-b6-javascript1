@@ -6,15 +6,17 @@
 flowchart TD
   A@{shape: circle, label: "start"}
   B@{shape: lean-r, label: 'Input : fullName = "John"'}
-  C@{shape: rect, label: 'age = 20'}
-  D@{shape: rect, label: 'hobbies = ["Programming"]'}
+  C@{shape: lean-r, label: 'Input : age = 20'}
+  D@{shape: lean-r, label: 'Input : hobbies = ["Programming"]'}
   E@{shape: diamond, label : 'fullName === "Jane"'}
   F@{shape: lean-r, label : 'Output : "Hello" + fullName'}
   G@{shape: diamond, label: 'fullName === "Dan" || fullName === "John"'}
-  H@{shape: lean-r, label: "Output : `Whats'up ${fullName}`"}
+
+  H@{shape: lean-r, label: "Output : #quot;Whats'up + fullName#quot;"}
+
   I@{shape: diamond, label: 'age > 18'}
   J@{shape: lean-r, label: 'Output : "How are you today?"'}
-  K@{shape: lean-r, label: "Output : `Let's go to school!`"}
+  K@{shape: lean-r, label: "Output : #quot; Let's go to school!#quot;"}
   L@{shape: diamond, label: 'hobbies[0] === "Programming"'}
   M@{shape: lean-r, label: 'Output : "I love JavaScript!"'}
   N@{shape: diamond, label: 'fullName === "John"'}
