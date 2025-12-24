@@ -10,7 +10,7 @@
 // console.log("keliling lingkaran adalah " + kelilingLingkaran);
 
 let r = 15;
-let phi;
+let phi = 0;
 
 if (r % 7 === 0) {
   phi = 22 / 7;
