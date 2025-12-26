@@ -5,7 +5,7 @@
 ```mermaid
 flowchart
   start@{shape: circle }
-  input@{shape: lean-r, label : 'Input : temp = 9, tempSource = "" , converTo = ""  '}
+  input@{shape: lean-r, label : 'Input : temp = 9, tempSource = "celcius" , converTo = "fahrenheit"  '}
   isNumber@{shape: diamond, label: 'typeof temp !== "number"'}
 
   harusAngka@{shape: lean-r, label : 'Output : temp "harus angka"'}
