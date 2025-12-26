@@ -30,6 +30,14 @@ flowchart
   proccesCtoR@{shape : rect, label : 'R = (4/5) * temp'}
   outputCtoR@{shape: lean-r, label : 'Output : R'}
 
+  fToR@{shape: diamond, label : 'converTo == "reamur"'}
+  proccesFtoR@{shape : rect, label : 'R = (temp - 32) × 4/9'}
+  outputFtoR@{shape: lean-r, label : 'Output : R'}
+
+  fToK@{shape: diamond, label : 'converTo == "kelvin"'}
+  proccesFtoK@{shape : rect, label : 'K = 5/9 (temp - 32) + 273'}
+  outputFtoK@{shape: lean-r, label : 'Output : K'}
+
 
 
 
@@ -54,4 +62,12 @@ cToK --False-->cToR
 cToR --True--> proccesCtoR
 proccesCtoR --> outputCtoR --> stop
 cToR --False--> stop
+
+targetCelcius --False--> fToR
+fToR --True--> proccesFtoR
+proccesFtoR --> outputFtoR --> stop
+
+fToR --False--> fToK
+fToK --> proccesFtoK
+proccesFtoK --> outputFtoK --> stop
 ```
