@@ -5,7 +5,7 @@
 ```mermaid
 flowchart TB
   start@{shape: circle}
-  inisialState@{shape: lean-r, label : 'Output : x = 1'}
+  inisialState@{shape: lean-r, label : 'Input : x = 1'}
   condition@{shape: diamond, label : 'x <= 10'}
   log@{shape: lean-r, label : 'Output : x'}
   contitionIf@{shape: diamond, label: 'x === 5'}
