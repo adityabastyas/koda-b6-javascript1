@@ -5,10 +5,10 @@
 ```mermaid
 flowchart
   start@{shape: circle}
-  input@{shape: lean-r, label: 'Input : IS_FEATURE_ACTICE = "" , num = 100'}
-  true@{shape: diamond, label: 'IS_FEATURE_ACTICE === true'}
+  input@{shape: lean-r, label: 'Input : IS_FEATURE_ACTIVE = "" , num = 100'}
+  true@{shape: diamond, label: 'IS_FEATURE_ACTIVE === true'}
   outputTrue@{shape: lean-r, label : 'Output : "Hello"'}
-  false@{shape: diamond, label: 'IS_FEATURE_ACTICE === false'}
+  false@{shape: diamond, label: 'IS_FEATURE_ACTIVE === false'}
   outputFalse@{shape: lean-r, label : 'Output : "Hi"'}
   default@{shape: diamond, label: 'num === 100'}
   defaultTrue@{shape: lean-r, label : 'Output : num'}
