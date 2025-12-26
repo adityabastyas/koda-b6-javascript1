@@ -12,7 +12,7 @@ flowchart
   outputFalse@{shape: lean-r, label : 'Output : "Hi"'}
   default@{shape: diamond, label: 'num === 100'}
   defaultTrue@{shape: lean-r, label : 'Output : num'}
-  defaultFalse@{shape: lean-r, label : 'Output : "Bonjour1"'}
+  defaultFalse@{shape: lean-r, label : 'Output : "Bonjour!"'}
 
   selesai@{shape: dbl-circ, label: "Selesai"}
 
@@ -20,8 +20,8 @@ flowchart
   input --> true
   true --True --> outputTrue -->  selesai
   true --False --> false
-  false --True-->  outputFalse -->  selesai
-  outputFalse --False--> default
+  false --True-->  outputFalse  -->  selesai
+  false --False--> default
   default --True--> defaultTrue -->  selesai
   default --False--> defaultFalse -->  selesai
 
