@@ -12,14 +12,14 @@ flowchart
   isCelcius@{shape: diamond, label : 'tempSource == "celcius"'}
   targetFahrenheit@{shape : diamond, label : 'converTo == "fahrenheit"'}
 
-  processF@{shape: rect, label : 'F = temp × (9/5) + 32'}
+  processF@{shape: rect, label : 'F = temp * (9/5) + 32'}
   outputF@{shape: lean-r, label : 'Output : F'}
 
   stop@{shape : dbl-circ}
 
   isFahrenheit@{shape: diamond, label : 'tempSource == "fahrenheit"'}
   targetCelcius@{shape : diamond, label : 'converTo == "celcius"'}
-  processC@{shape: rect, label : 'C = (temp - 32) × 5/9'}
+  processC@{shape: rect, label : 'C = (temp - 32) * 5/9'}
   outputC@{shape: lean-r, label : 'Output : C'}
 
   cToK@{shape: diamond, label : 'converTo == "kelvin"'}
@@ -31,39 +31,39 @@ flowchart
   outputCtoR@{shape: lean-r, label : 'Output : R'}
 
   fToR@{shape: diamond, label : 'converTo == "reamur"'}
-  proccesFtoR@{shape : rect, label : 'R = (temp - 32) × 4/9'}
+  proccesFtoR@{shape : rect, label : 'R = (temp - 32) * 4/9'}
   outputFtoR@{shape: lean-r, label : 'Output : R'}
 
   fToK@{shape: diamond, label : 'converTo == "kelvin"'}
-  proccesFtoK@{shape : rect, label : 'K = 5/9 (temp - 32) + 273'}
+  proccesFtoK@{shape : rect, label : 'K = 5/9 * (temp - 32) + 273'}
   outputFtoK@{shape: lean-r, label : 'Output : K'}
 
   tempK@{shape: diamond, label : 'tempSource == "kelvin"'}
 
   kToC@{shape: diamond, label : 'converTo == "celcius"'}
-  proccesKtoC@{shape : rect, label : 'C = temp - 273,15'}
+  proccesKtoC@{shape : rect, label : 'C = temp - 273.15'}
   outputKtoC@{shape: lean-r, label : 'Output : C'}
 
   kToF@{shape: diamond, label : 'converTo == "fahrenheit"'}
-  proccesKtoF@{shape : rect, label : 'F = (temp − 273,15) × 9/5 + 32'}
+  proccesKtoF@{shape : rect, label : 'F = (temp − 273.15) * 9/5 + 32'}
   outputKtoF@{shape: lean-r, label : 'Output : F'}
 
   kToR@{shape: diamond, label : 'converTo == "reamur"'}
-  proccesKtoR@{shape : rect, label : 'R = 4/5 (temp - 273)'}
+  proccesKtoR@{shape : rect, label : 'R = 4/5 * (temp - 273.15)'}
   outputKtoR@{shape: lean-r, label : 'Output : R'}
 
   tempR@{shape: diamond, label : 'tempSource == "reamur"'}
 
   rToC@{shape: diamond, label : 'converTo == "celcius"'}
-  proccesRtoC@{shape : rect, label : 'C = (5/4) x temp '}
+  proccesRtoC@{shape : rect, label : 'C = (5/4) * temp '}
   outputRtoC@{shape: lean-r, label : 'Output : C'}
 
   rToF@{shape: diamond, label : 'converTo == "fahrenheit"'}
-  proccesRtoF@{shape : rect, label : 'F = (temp × 9/4) + 32 '}
+  proccesRtoF@{shape : rect, label : 'F = (temp * 9/4) + 32 '}
   outputRtoF@{shape: lean-r, label : 'Output : F'}
 
   rToK@{shape: diamond, label : 'converTo == "kelvin"'}
-  proccesRtoK@{shape : rect, label : 'K = (temp × 5/4) + 273,15 '}
+  proccesRtoK@{shape : rect, label : 'K = (temp * 5/4) + 273.15 '}
   outputRtoK@{shape: lean-r, label : 'Output : K'}
 
 
